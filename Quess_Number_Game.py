@@ -3,7 +3,7 @@ import random
 
 def guess_number_game():
     while True:
-        print("\nGuess the number game. Good luck!\n")
+        print("\nGuess the number. Good luck!\n")
         try:
             secret_number = random.randint(1, 100)
             number_of_guesses = 0
@@ -22,7 +22,7 @@ def guess_number_game():
                 else:
                     print(f"You won in {number_of_guesses} guesses!")
         except ValueError:
-            print("You have to choise a number between 1 and 100!")
+            print("You have to choise a number from 1 to 100!")
         print(
             "Do you want to play again? (Type 'Y' for a new game or anything else to EXIT)")
         ans = input().lower()

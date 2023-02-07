@@ -16,15 +16,10 @@ class Calculator:
             return f"{self.a} / {self.b} = {self.a / self.b}"
 
 
-equation = Calculator()
-print(equation.mathematical_operations())
-print("\n")
-exit_or_continue = input("Continue? Yes/No: ")
 while True:
-    if exit_or_continue.lower() == "yes":
-        equation = Calculator()
-        print(equation.mathematical_operations())
-        print("\n")
-        exit_or_continue = input("Continue? Yes/No: ")
-    elif exit_or_continue.lower() == "no":
+    equation = Calculator()
+    print(equation.mathematical_operations())
+    print("\n")
+    exit_or_continue = input("Continue? Yes/No: ")
+    if exit_or_continue.lower() == "no":
         quit()

@@ -42,17 +42,17 @@ while True:
         if result == 0:
             print("Draw")
         elif choice == 1 and result == -1:
-            print("You lose!", comp_choice_name, "covers", choice_name)
+            print(f"You lose! {comp_choice_name} covers {choice_name}")
         elif choice == 1 and result == -2:
-            print("You win!", choice_name, "smashes", comp_choice_name)
+            print(f"You win! {choice_name} smashes {comp_choice_name}")
         elif choice == 2 and result == 1:
-            print("You win!", choice_name, "covers", comp_choice_name)
+            print(f"You win! {choice_name} covers {comp_choice_name}")
         elif choice == 2 and result == -1:
-            print("You lose!", comp_choice_name, "cuts", choice_name)
+            print(f"You lose! {comp_choice_name} cuts {choice_name}")
         elif choice == 3 and result == 2:
-            print("You lose!", comp_choice_name, "smashes", choice_name)
+            print(f"You lose! {comp_choice_name} smashes {choice_name}")
         elif choice == 3 and result == 1:
-            print("You win!", choice_name, "smashes", comp_choice_name)
+            print(f"You win! {choice_name} smashes {comp_choice_name}")
 
     except ValueError:
         print("You must choose one of the 3 numbers above (1, 2 or 3)")
