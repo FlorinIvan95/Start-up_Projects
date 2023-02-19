@@ -32,7 +32,7 @@ def login_window():
     login_win.resizable(False, False)
     login_win.configure(background='lightblue')
     bg_image = tk.PhotoImage(
-        file='D:\Python-Projects\Python\ATM-Simulator\image_bg.png')
+        file='D:\Python-Projects\Python\ATM_Simulator\Images\image_bg.png')
     bg_label = tk.Label(login_win, image=bg_image)
     bg_label.place(x=100, y=70)
 
@@ -42,7 +42,7 @@ def login_window():
 
     # Create the login widget for "card number"
     card_image = tk.PhotoImage(
-        file='D:\Python-Projects\Python\ATM-Simulator\image_card.png')
+        file='D:\Python-Projects\Python\ATM_Simulator\Images\image_card.png')
     card_label = tk.Label(login_frame, image=card_image, text='Card Number',
                           compound='left', font=('times new roman', 15, 'bold'), bg='lightblue')
     card_label.grid(row=0, column=0, padx=20)
@@ -53,7 +53,7 @@ def login_window():
 
     # Create the login widget for "PIN"
     pin_image = tk.PhotoImage(
-        file='D:\Python-Projects\Python\ATM-Simulator\image_pin.png')
+        file='D:\Python-Projects\Python\ATM_Simulator\Images\image_pin.png')
     pin_label = tk.Label(login_frame, image=pin_image, text='PIN', compound='left',
                          font=('times new roman', 15, 'bold'), bg='lightblue')
     pin_label.grid(row=1, column=0, padx=20)
@@ -97,7 +97,7 @@ def show_balance(user):
     trans_win.resizable(False, False)
     trans_win.configure(background='lightblue')
     bg_image = tk.PhotoImage(
-        file='D:\Python-Projects\Python\ATM-Simulator\image_bg.png')
+        file='D:\Python-Projects\Python\ATM_Simulator\Images\image_bg.png')
     bg_label = tk.Label(trans_win, image=bg_image)
     bg_label.place(x=100, y=70)
 
@@ -107,7 +107,7 @@ def show_balance(user):
 
     # Create the balance widget
     money_image = tk.PhotoImage(
-        file='D:\Python-Projects\Python\ATM-Simulator\image_money.png')
+        file='D:\Python-Projects\Python\ATM_Simulator\Images\image_money.png')
     pin_label = tk.Label(login_frame, image=money_image, text='Your balance is:', compound='left',
                          font=('times new roman', 15, 'bold'), bg='lightblue')
     pin_label.grid(row=0, column=0)
