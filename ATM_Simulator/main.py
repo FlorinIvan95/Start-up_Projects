@@ -13,7 +13,7 @@ db = pymysql.connect(
 # Define a function to insert line after every four digits
 
 
-def insert_hyphens(event):
+def insert_lines(event):
     widget = event.widget
     text = widget.get()
     if len(text) == 4 or len(text) == 9 or len(text) == 14:
@@ -49,7 +49,7 @@ def login_window():
     card_entry = tk.Entry(login_frame, font=(
         'times new roman', 15, 'bold'), bd=5)
     card_entry.grid(row=0, column=1)
-    card_entry.bind("<KeyRelease>", insert_hyphens)
+    card_entry.bind("<KeyRelease>", insert_lines)
 
     # Create the login widget for "PIN"
     pin_image = tk.PhotoImage(
