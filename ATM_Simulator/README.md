@@ -1,4 +1,4 @@
-This is a ATM Smulator where the card number and PIN must be entered to see the amount of money and to be able to make transactions (withdrawal/deposit).
+This is a ATM Simulator where the card number and PIN must be entered to see the amount of money and to be able to make transactions (withdrawal/deposit).
 
 How to use:
 1. download the "ATM_Simulator" folder to your PC
